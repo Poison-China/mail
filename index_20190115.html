@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>邮箱登录 - 个人邮箱登录 - mail.yanqingshan.com</title>
+    <link rel="stylesheet" href="css/mail.css" />
+    <script>
+        //百度统计代码 开始
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6fa50ed9d6cec529d56f116c99f64d63";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        //百度统计代码 结束
+    </script>
+
+</head>
+
+<body>
+    <form action="https://exmail.qq.com/cgi-bin/login" method="post">
+        <img src="img/bgImg.jpg" class="bgImg">
+        <div class="content">
+            <div class="bidTitle">邮箱登录</div>
+            <div class="logCon">
+                <div class="line">
+                    <span>账号:</span>
+                    <input type="hidden" name="firstlogin" value="false">
+                    <input type="hidden" name="errtemplate" value="dm_loginpage">
+                    <input type="hidden" name="aliastype" value="other">
+                    <input type="hidden" name="dmtype" value="bizmail">
+                    <input type="hidden" name="p" value="">
+                    <input type="text" name="uin" class="bt_input" placeholder="请直接输入邮箱ID即可" required>
+                    <input type="hidden" name="domain" value="yanqingshan.com">
+                </div>
+                <div class="line">
+                    <span>密码:</span>
+                    <input type="password" class="bt_input" name="pwd" placeholder="请输入您的密码" required>
+                </div>
+                <button type="submit" class="logingBut">登录</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
