@@ -10,7 +10,11 @@ html {
 body {
     height: 100%;
     background: #fff url(../img/backgroud.png) 50% 50% no-repeat;
-    /*background: #fff url(../img/new_login_background_190115.jpg) 50% 50% no-repeat;*/
+    
+    
+    /*background: #fff url(../img/new_login_background_190115.jpg) 50% 50% no-repeat;*/    
+    /*更新背景图*/
+    /*background: #fff url(../img/feb1.png) 50% 50% no-repeat;*/
     background-size: cover;
 }
 
@@ -28,11 +32,14 @@ body {
 }
 
 .logo {
-    width: 104px;
+    /*width: 104px;*/
     height: 104px;
     margin: 50px auto 80px;
     /*background: url(../img/login.png) 0 0 no-repeat;*/
-    background: url(../img/logo190115.png) 0 0 no-repeat;
+    /*background: url(../img/logo190115.png) 0 0 no-repeat;*/
+    /* 20190116 更换logo */
+    background: url(../img/logo190116.png) 0 0 no-repeat;
+    width:400px;
 }
 
 .form-item {
@@ -153,6 +160,8 @@ body {
 
     .logo {
         margin: 50px auto;
+        /*190116更新logo 添加*/
+        width: 104px;
     }
 
     .form-item {
