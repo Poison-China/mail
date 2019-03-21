@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon-2019022409243792.ico" type="image/x-icon">
+		<!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
+		<title>邮箱登录 - 个人邮箱登录 - mail.yanqingshan.com</title>
+		<meta name="keyword" content="邮箱登录首页,邮箱登陆,yanqingshan,燕青山邮箱,燕青山">
+		<meta name="description" content="个人企业邮箱系统，欢迎您的使用。">
+		<link href="css/index_190115.css" rel="stylesheet" />
+		<script src="js/jquery.min.js?v=1.12.4"></script>
+	</head>
+
+	<body>
+		<form action="https://exmail.qq.com/cgi-bin/login" method="post">
+			<div class="dowebok">
+				<div class="logo"></div>
+				<div class="form-item">
+					<input type="hidden" value="false" name="firstlogin" />
+					<input type="hidden" value="dm_loginpage" name="errtemplate" />
+					<input type="hidden" value="other" name="aliastype" />
+					<input type="hidden" value="bizmail" name="dmtype" />
+					<input type="hidden" value="" name="p" />
+					<input type="text" id="username" name="uin" autocomplete="off" class="bt_input" placeholder="请直接输入邮箱ID即可" required />
+					<input type="hidden" value="yanqingshan.com" name="domain" />
+					<p class="tip">请输入合法的邮箱地址</p>
+				</div>
+				<div class="form-item">
+					<input type="password" id="password" autocomplete="off" class="bt_input" name="pwd" placeholder="请输入您的密码" required />
+					<p class="tip">邮箱或密码不正确</p>
+				</div>
+				<div class="form-item">
+					<button id="submit">登 录</button>
+				</div>
+				<div class="reg-bar">
+					<a class="reg" href="javascript:alert('请联系系统管理员：i@yanqingshan.com')">立即注册</a>
+					<span id="copy">2018-2019</span>
+					<a class="forget" target="_blank" href="https://exmail.qq.com/cgi-bin/readtemplate?check=false&t=biz_rf_portal#recovery">忘记密码</a>
+				</div>
+			</div>
+		</form>
+		
+		<script>
+			$(function() {
+				var myDate = new Date();
+				//获取时间
+				var year = myDate.getFullYear();
+				$('#copy').html('&copy;2014-' + year);
+			})
+			//百度统计代码 开始
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?6fa50ed9d6cec529d56f116c99f64d63";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+			//百度统计代码 结束
+		</script>
+
+	</body>
+
+</html>
