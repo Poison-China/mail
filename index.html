@@ -1,224 +1,71 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-cn" class="no-js">
-<head>
-    <meta charset="utf-8">
-    <title>邮箱登录 - 个人邮箱登录 - 燕青山个人企业邮箱 - mail.yanqingshan.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="favicon-2019022409243792.ico" type="image/x-icon">
-    <meta name="keyword" content="邮箱登录首页,邮箱登陆,yanqingshan,燕青山邮箱,燕青山">
-    <meta name="description" content="个人企业邮箱系统，欢迎您的使用。">
-    <meta name="author" content="萧瑟">
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/supersized.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>邮箱登录 - 个人邮箱登录 - 燕青山个人企业邮箱 - mail.yanqingshan.com</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="favicon-2019022409243792.ico" type="image/x-icon">
+		<meta name="keyword" content="邮箱登录首页,邮箱登陆,yanqingshan,燕青山邮箱,燕青山">
+		<meta name="description" content="个人企业邮箱系统，欢迎您的使用。">
+		<meta name="author" content="燕青山">
+		<link rel="stylesheet" href="css/Style.css" />
 
-    <!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <style>
-        html, h1, input {
-            color: black;
-        }
-        /*body {
-            background-image: url('https://acg.toubiec.cn/random');
-            background-size: 100% 100%;
-            background-attachment: fixed;
-        }*/
-        #web_bg { /*background-image: url('https://acg.toubiec.cn/random');*/
-            background-image: url('https://api.bcrjl.com/api/img.rand.heng.php?sort=专属');
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%; /*min-width: 1000px;*/
-            z-index: -10;
-            zoom: 1;
-            background-color: #fff;
-            background-repeat: no-repeat;
-            background-size: cover;
-            -webkit-background-size: cover;
-            -o-background-size: cover;
-            background-position: center 0;
-            opacity: 0.4;
-        }
+	<body>
+		<div class="head-menu">
+			<div class="menu-container">
+				<ul class="left">
+					<li>
+						<a href="#"><img src="image/logo.png"></a>
+					</li>
 
-        @media screen and (max-width:600px) {
-            /*body {
-                background-image: url('https://ww2.sinaimg.cn/large/005BYqpgly1g19mt407egj30u0190x6q.jpg');
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -10;
-                zoom: 1;
-                background-color: #fff;
-                background-repeat: no-repeat;
-                background-size: cover;
-                -webkit-background-size: cover;
-                -o-background-size: cover;
-                background-position: center 0;
-            }*/
-            #web_bg {
-                /*background-image: url(https://xltc.bcrjl.com/large/005BYqpgly1g19n6w65k7j30u016f4oa.jpg);*/
-                background-image: url('https://api.uomg.com/api/rand.img2?sort=美女');
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%; /*min-width: 1000px;*/
-                z-index: -10;
-                zoom: 1;
-                background-color: #fff;
-                background-repeat: no-repeat;
-                background-size: cover;
-                -webkit-background-size: cover;
-                -o-background-size: cover;
-                background-position: center 0;
-                opacity: 0.4;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="index-nav">
-        <div class="index-nav-frame clearfix">
-            <div class="nav-line">
-            </div>
-            <div class="nav-small" tabindex="-1">
-                <div class="nav-small-focus" tabindex="-1">
+				</ul>
+				<ul class="right">
+					
+					<li>
+						<a href="//api.bcrjl.com" target="_blank" title="Bcrjl API">API</a>
+					</li>
+					<li>
+						<a href="//nuget.bcrjl.com" title="私人Nuget" target="_blank">NuGet</a>
+					</li>					
+					<li>
+						<a href="//mail.yanqingshan.com" title="燕青山个人企业邮箱">邮箱</a>
+					</li>
+					<li>
+						<a href="//www.yanqingshan.com" target="_blank" title="燕青山个人主页">主页</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="web_bg"></div>
+		<div class="page-container">
+			<h1>邮箱登陆</h1>
+			<form action="https://exmail.qq.com/cgi-bin/login" method="post" class="pc_login">
+				<input type="hidden" value="false" name="firstlogin" />
+				<input type="hidden" value="dm_loginpage" name="errtemplate" />
+				<input type="hidden" value="other" name="aliastype" />
+				<input type="hidden" value="bizmail" name="dmtype" />
+				<input type="hidden" value="" name="p" />
+				<input type="text" name="uin" class="username account-circle" placeholder="请直接输入邮箱ID即可" autocomplete="off" required>
+				<input type="hidden" value="yanqingshan.com" name="domain" />
+				<input type="password" name="pwd" class="password" placeholder="请输入您的密码" required>
+				<button type="submit">登陆邮箱</button>
+				<!--<div class="error"><span>+</span></div>-->
+			</form>
 
-                </div>
-                <img src="img/icon.png">
-            </div>
-            <div class="index-nav-frame-line">
-                <a href="//www.yanqingshan.com" target="_blank" style="text-decoration:none;">首页</a>
-                <!--<div class="index-nav-frame-line-center">
-                    <div class="index-nav-frame-line-li">
-                        首页1
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        首页2
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        首页3
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        首页4
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        首页5
-                    </div>
-                </div>-->
-                <!--<div class="index-nav-frame-line-focus" tabindex="-1"></div>-->
-            </div>
-            <div class="index-nav-frame-line active">
-                邮箱
-                <!--<div class="index-nav-frame-line-center">
-                    <div class="index-nav-frame-line-li">
-                        第二页面1
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第二页面2
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第二页面3
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第二页面4
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第二页面5
-                    </div>
-                </div>-->
-                <!--<div class="index-nav-frame-line-focus" tabindex="-1"></div>-->
-            </div>
-            <div class="index-nav-frame-line">
-                <a href="//nuget.bcrjl.com" target="_blank" style="text-decoration:none;color:black">NuGet</a>
-                <!--<div class="index-nav-frame-line-center">
-                    <div class="index-nav-frame-line-li">
-                        第三页面1
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第三页面2
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第三页面3
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第三页面4
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第三页面5
-                    </div>
-                </div>
-                <div class="index-nav-frame-line-focus" tabindex="-1"></div>-->
-            </div>
-            <div class="index-nav-frame-line">
-                <a href="//api.bcrjl.com" target="_blank" style="text-decoration:none;">API</a>
-                <!--<div class="index-nav-frame-line-center">
+			<form method="post" action="https://m.exmail.qq.com/cgi-bin/login" class="m_login">
+				<input type="hidden" name="device" value="">
+				<input type="hidden" name="f" value="xhtml">
+				<input type="hidden" name="tfcont" value="">
+				<input type="email" name="uin" id="uin" placeholder="请输入完整的帐号，包括域名。" autocomplete="off" required>
+				<input type="password" name="pwd" id="pwd" placeholder="请输入您的密码" autocomplete="off" required>
+				<button type="submit">登陆邮箱</button>
+			</form>
+			<div class="copyright">				
+				<p><a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener nofollow">京ICP备19003457号</a></p>
+			</div>
+		</div>
+	</body>
 
-                    <div class="index-nav-frame-line-li">
-                        第四页面1
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第四页面2
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第四页面3
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第四页面4
-                    </div>
-                    <div class="index-nav-frame-line-li">
-                        第四页面5
-                    </div>
-                </div>
-                <div class="index-nav-frame-line-focus" tabindex="-1"></div>-->
-            </div>
-        </div>
-    </div>
-    <!--<div class="head-menu">
-        <ul class="head-menu-ul">
-            <li>主页</li>
-            <li>邮箱</li>
-            <li>API</li>
-        </ul>
-    </div>-->
-    <div id="web_bg"></div>
-    <div class="page-container">
-        <h1>邮箱登陆</h1>
-        <form action="https://exmail.qq.com/cgi-bin/login" method="post">
-            <input type="hidden" value="false" name="firstlogin" />
-            <input type="hidden" value="dm_loginpage" name="errtemplate" />
-            <input type="hidden" value="other" name="aliastype" />
-            <input type="hidden" value="bizmail" name="dmtype" />
-            <input type="hidden" value="" name="p" />
-            <input type="text" name="uin" class="username" placeholder="请直接输入邮箱ID即可" autocomplete="off" required>
-            <input type="hidden" value="yanqingshan.com" name="domain" />
-            <input type="password" name="pwd" class="password" placeholder="请输入您的密码" required>
-            <button type="submit">登陆邮箱</button>
-            <!--<div class="error"><span>+</span></div>-->
-        </form>
-        <div class="connect">
-            <p>&copy;2019 京ICP备19003457号</p>
-        </div>
-
-    </div>
-    <!-- Javascript -->
-    <script src="assets/js/jquery-1.8.2.min.js"></script>
-    <!--<script src="assets/js/supersized.3.2.7.min.js"></script>
-    <script src="assets/js/supersized-init.js"></script>
-    <script src="assets/js/scripts.js"></script>-->
-    <!--<div id="site-navbar" style="position: absolute; top: -4px; left: -3px; border: 0; z-index: 2000;padding:0;margin:0;">
-        <a href="https://yanqingshan.com/" title="燕青山" style="background:none;"><img src="img/returnback.png" style="padding:0;margin:0;border:0; -webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;"></a>
-    </div>-->
-</body>
 </html>
-
-
