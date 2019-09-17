@@ -240,23 +240,23 @@ button:active {
 	.pc_login {
 		display: none;
 	}
-	.web_bg {
-		/*background-image: url('https://ae01.alicdn.com/kf/HTB14y67XBGw3KVjSZFw762Q2FXaE.png');*/
-		background-image: url(../image/20190916152014.png);
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		/*min-width: 1000px;*/
-		z-index: -10;
-		zoom: 1;
-		background-color: #fff;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-o-background-size: cover;
-		background-position: center 0;
-		opacity: 0.5;
-	}
+    .web_bg {
+        /*background-image: url('https://ae01.alicdn.com/kf/HTB14y67XBGw3KVjSZFw762Q2FXaE.png');*/
+        background-image: url('https://ws2.sinaimg.cn/large/8c534571ly1g72bdbmy7vj20u01hcx6q.jpg');
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /*min-width: 1000px;*/
+        z-index: -10;
+        zoom: 1;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-position: center 0;
+        opacity: 0.5;
+    }
 }
