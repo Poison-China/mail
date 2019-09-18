@@ -198,6 +198,9 @@ input:focus {
 	-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset, 0 2px 7px 0 rgba(0, 0, 0, .2);
 	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset, 0 2px 7px 0 rgba(0, 0, 0, .2);
 }
+input:hover{
+    border:1px solid #48a5f4;
+}
 
 .account-circle:before {
 	content: '\f205';
